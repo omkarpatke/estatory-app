@@ -11,7 +11,7 @@ const PropertiesContextProvider = ({children}) => {
 
     useEffect(() => {
       setFilteredproperties(properties);
-    } , []);
+    } , [properties]);
 
     return (<PropertiesContext.Provider value={{ properties, setProperties ,filteredProperties, setFilteredproperties }}>{children}</PropertiesContext.Provider>)
 

@@ -16,7 +16,7 @@ const PropertyCard = ({properties}) => {
             {property.popular ? <span className='popular-tag'><img src={shine} color='white' alt="like-icon" width={15} /> Popular</span> : '' }
             <div className="property-details">
             <div className="property-price">₹{property.rent}/<span>month</span></div>
-            <span className='heartIcon'><img src={heart} alt="like-icon" width={15} /></span>
+            <span className='heartIcon'>{ property.isAddedInFavourite ? <img src={filledHeart} alt="like-icon" width={15} /> : <img src={heart} alt="like-icon" width={15} /> }</span>
             <div className="property-name">{property.name}</div>
             <div className="property-address">{property.address}</div>
             <div className="property-detail">

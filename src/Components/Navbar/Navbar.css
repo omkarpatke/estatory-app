@@ -1,0 +1,55 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 0.1px solid lightgrey;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.authentication-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.login{
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
+
+.signup{
+    background-color: blueviolet;
+    color: white;
+}
+
+.brand-name{
+    font-size: 1.5rem;
+    color: blueviolet;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rent-link{
+    padding: 5px 12px;
+    border-radius: 2px;
+    background-color: rgb(237, 218, 255);
+}

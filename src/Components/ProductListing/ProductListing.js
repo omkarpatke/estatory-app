@@ -4,14 +4,22 @@ import PropertyCard from '../PropertyCard/PropertyCard';
 import './ProductListing.css';
 
 const ProductListing = () => {
-  const { properties } = useProperties();
+  const { filteredProperties, setFilteredproperties , properties } = useProperties();
+
+  const searchHandler = (e) => {
+    if(e.target.value.length >= 1){
+    setFilteredproperties(pre => pre.filter(property => property.address.includes(e.target.value) || property.name.includes(e.target.value)));
+    }else{
+      setFilteredproperties(properties);
+    }
+  }
   
 
   return (
     <div className='productlisting-container'>
       <div className="title">
         <h2 className='heading'>Search For Rent Properties</h2>
-        <input type="search" name="searchproperties" className='search-properties' id="searchproperties" placeholder='Search With SearchBar' />
+        <input type="search" name="searchproperties" className='search-properties' id="searchproperties" placeholder='Search With SearchBar' onChange={searchHandler} />
       </div>
       <div className="filters">
         <div className="filter location-filter">
@@ -36,7 +44,7 @@ const ProductListing = () => {
           </div> |
         <div className="filter-btn btn signup">Search</div>
       </div>
-      <PropertyCard properties={properties} />
+      <PropertyCard properties={filteredProperties} />
     </div>
   )
 }

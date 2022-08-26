@@ -1,0 +1,86 @@
+.properties-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem ;
+}
+
+.property-card{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 20rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.property-details{
+    padding: 10px;
+    text-align: initial;
+    width: 100%;
+}
+
+.property-img{
+    width: 20rem;
+    height: 13rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.property-price{
+    font-size: 1.2rem;
+    color: blueviolet;
+    font-weight: 600;
+    position: absolute;
+}
+
+.property-price span{
+    color: gray;
+    font-size: 15px;
+}
+
+.property-name{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.property-address{
+    font-size: 1rem;
+}
+
+.property-detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2;
+    margin-top: 10px;
+    padding: 5px 1px;
+    border-top: 1px solid lightgray;
+}
+
+.detail{
+    font-size: 14px;
+}
+
+.heartIcon{
+    position: relative;
+    left: 17rem;
+    padding: 1px 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.popular-tag{
+    position: relative;
+    background-color: blueviolet;
+    color: white;
+    bottom: 0.5rem;
+    padding: 0 10px;
+    right: 6.9rem;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}

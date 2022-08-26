@@ -1,0 +1,56 @@
+.productlisting-container{
+    display: flex;
+    margin: 2rem 15rem;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 92vh;
+}
+
+.title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.heading{
+    font-weight: 600;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.filter{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 6rem;
+    text-align: initial;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+
+.filter-btn{
+    margin: 1rem;
+}
+
+.lite-heading{
+    color: rgba(163, 163, 163, 0.881);
+    font-size: 15px;
+}
+
+.search-properties{
+    width: 15rem;
+    border: none;
+    padding: 0 8px;
+    height: 2.4rem;
+    border-radius: 2px;
+}

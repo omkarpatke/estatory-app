@@ -4,37 +4,43 @@ const properties = [
     {
         _id: uuid(),
         name: '4 BHK House',
-        address: 'Iswarnagar, Thane',
+        address: 'Iswarnagar, Mumbai',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGkpt7ZI2_xXCWFPOxBTb-nttpZ3Zm0wKug&usqp=CAU',
         area: '2100',
         bedrooms:'4',
-        isAddedInFavourite: true,
+        isAddedInFavourite: false,
         popular:true,
         bathrooms:'3',
+        location:'mumbai',
+        type:'bungalow',
         rent: '35000'
     },
     {
         _id: uuid(),
         name: '1 BHK House',
-        address: 'wakadewadi, pune',
+        address: 'wakadewadi, Mumbai',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouhZYdi4INM3L8yK00WlQ0Or2Yw1lCY3Rwg&usqp=CAU',
         area: '600',
         bedrooms:'1',
         isAddedInFavourite: false,
         popular:false,
         bathrooms:'1',
+        location:'mumbai',
+        type:'bangalow',
         rent: '8000'
     },
     {
         _id: uuid(),
         name: '2 BHK House',
-        address: 'Kondhawa pune',
+        address: 'Kondhawa Mumbai',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5dO-B0PKIwTCrsRCKROAHjBD56SnWM6rxxA&usqp=CAU',
         area: '1290',
         bedrooms:'2',
         isAddedInFavourite: false,
         popular:true,
         bathrooms:'2',
+        location:'mumbai',
+        type:'flat',
         rent: '16000'
     },
     {
@@ -47,18 +53,50 @@ const properties = [
         isAddedInFavourite: false,
         popular:true,
         bathrooms:'2',
+        location:'mumbai',
+        type:'flat',
         rent: '14000'
     },
     {
         _id: uuid(),
+        name: '3 BHK House',
+        address: 'camp, Thane',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xWlOsXynOvCLFqEIjsj2QXIC4hw_1w45Ag&usqp=CAU',
+        area: '2500',
+        bedrooms:'3',
+        isAddedInFavourite: false,
+        popular:true,
+        bathrooms:'3',
+        location:'thane',
+        type:'bungalow',
+        rent: '10000'
+    },
+    {
+        _id: uuid(),
+        name: '1 BHK House',
+        address: 'kasaba peth , Thane',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEAGjV64_K-UgSgPwr5-BviIb0UCjGxdELQ&usqp=CAU',
+        area: '1500',
+        bedrooms:'1',
+        isAddedInFavourite: false,
+        popular:true,
+        bathrooms:'2',
+        location:'thane',
+        type:'bungalow',
+        rent: '22000'
+    },
+    {
+        _id: uuid(),
         name: '1 BHK Independent House',
-        address: 'Gokuldham Complex, Goregoan East',
+        address: 'Gokuldham Complex,Pune',
         img: 'https://is1-3.housingcdn.com/01c16c28/02dcef8bab77b7c214fef430e8ea8345/v0/medium/1_bhk_independent_house-for-rent-goregaon_east-Mumbai-hall.jpg.webp',
         area: '460',
         bedrooms:'1',
         isAddedInFavourite: false,
         popular:false,
         bathrooms:'1',
+        location:'pune',
+        type:'flat',
         rent: '7500'
     },
     {
@@ -71,18 +109,22 @@ const properties = [
         isAddedInFavourite: false,
         popular:true,
         bathrooms:'1',
+        location:'mumbai',
+        type:'flat',
         rent: '8000'
     },
     {
         _id: uuid(),
         name: '1 RK House',
-        address: 'Versowa Andheri West',
+        address: 'Versowa Andheri West, Pune',
         img: 'https://is1-2.housingcdn.com/01c16c28/e6ee9cd47eece923b193bba6dfebdb41/v0/medium/1_rk_apartment-for-rent-andheri_west-Mumbai-hall.jpg.webp',
         area: '320',
         bedrooms:'0',
         isAddedInFavourite: false,
         popular:false,
         bathrooms:'1',
+        location:'pune',
+        type:'flat',
         rent: '4000'
     },
     {
@@ -95,6 +137,8 @@ const properties = [
         isAddedInFavourite: false,
         popular:false,
         bathrooms:'1',
+        location:'mumbai',
+        type:'flat',
         rent: '5000'
     },
     {
@@ -107,6 +151,8 @@ const properties = [
         isAddedInFavourite: false,
         popular:true,
         bathrooms:'2',
+        location:'thane',
+        type:'flat',
         rent: '20000'
     },
     {
@@ -119,20 +165,54 @@ const properties = [
         isAddedInFavourite: false,
         popular:true,
         bathrooms:'2',
+        location:'mumbai',
+        type:'flat',
         rent: '17000'
     },
     {
         _id: uuid(),
         name: '3 BHK House',
-        address: 'kasaba peth , pune',
+        address: 'kasaba peth , Thane',
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KCVTEu7UDDSgPrTfSec_CmtzSaUOU4qniQ&usqp=CAU',
         area: '1200',
         bedrooms:'3',
         isAddedInFavourite: false,
         popular:true,
         bathrooms:'4',
+        location:'thane',
+        type:'flat',
         rent: '25000'
-    }
+    },
+    {
+        _id: uuid(),
+        name: '4 BHK House',
+        address: 'camp, Mumbai',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xWlOsXynOvCLFqEIjsj2QXIC4hw_1w45Ag&usqp=CAU',
+        area: '2500',
+        bedrooms:'4',
+        isAddedInFavourite: false,
+        popular:true,
+        bathrooms:'5',
+        location:'mumbai',
+        type:'bungalow',
+        rent: '20000'
+    },
+    {
+        _id: uuid(),
+        name: '2 BHK House',
+        address: 'kasaba peth , Pune',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlEAGjV64_K-UgSgPwr5-BviIb0UCjGxdELQ&usqp=CAU',
+        area: '1500',
+        bedrooms:'2',
+        isAddedInFavourite: false,
+        popular:true,
+        bathrooms:'2',
+        location:'pune',
+        type:'bungalow',
+        rent: '14000'
+    },
+    
+    
 ];
 
 export { properties };

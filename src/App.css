@@ -5,6 +5,10 @@
   background-color: rgb(246, 246, 246);
 }
 
+.active{
+  color:green;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
